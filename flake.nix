@@ -43,6 +43,7 @@
 
         defaultPackage = with pkgs; naersk'.buildPackage {
           src = ./.;
+          pname = "vlsm-calc";
           nativeBuildInputs = [
             makeWrapper
           ];
